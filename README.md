@@ -1,48 +1,63 @@
-# TensorFlow-project
+# TensorFlow Handwritten Digit Recognition
 
-Este código implementa um modelo simples de aprendizado de máquina usando TensorFlow para reconhecimento de dígitos escritos à mão. Aqui estão as principais funcionalidades:
+This project implements a simple machine learning model using TensorFlow for handwritten digit recognition based on the MNIST dataset.
 
-Configuração e inicialização:
+## Overview
 
-Importa bibliotecas necessárias (TensorFlow, NumPy, Matplotlib)
-Cria um arquivo PDF com timestamp para salvar resultados
-Carregamento de dados:
+The project demonstrates a complete machine learning workflow, from data preparation to model evaluation, focusing on recognizing handwritten digits (0-9).
 
-Utiliza o dataset MNIST (dígitos manuscritos)
-Normaliza os dados de entrada para valores entre 0 e 1
-Visualização de exemplos:
+## Features
 
-Mostra 5 imagens de exemplo do dataset
-Salva estas visualizações no PDF
-Criação do modelo neural:
+### Setup and Initialization
+- Imports required libraries (TensorFlow, NumPy, Matplotlib)
+- Creates a timestamped PDF to save results
 
-Implementa uma rede neural simples com:
-Uma camada de achatamento (flatten) para transformar imagens 28x28 em vetores
-Uma camada oculta com 128 neurônios e função de ativação ReLU
-Uma camada de saída com 10 neurônios (um para cada dígito 0-9)
-Treinamento:
+### Data Loading
+- Utilizes the MNIST dataset (handwritten digits)
+- Normalizes input data to values between 0 and 1
 
-Treina o modelo por 5 épocas
-Registra e exibe métricas de precisão e perda a cada época
-Utiliza callbacks para mostrar progresso
-Visualização do treinamento:
+### Data Visualization
+- Displays 5 example images from the dataset
+- Saves these visualizations to PDF
 
-Gera gráficos para mostrar a evolução da precisão e perda
-Compara desempenho entre conjunto de treino e teste
-Avaliação do modelo:
+### Neural Network Model
+- Implements a simple neural network with:
+  - A flatten layer to transform 28x28 images into vectors
+  - A hidden layer with 128 neurons and ReLU activation
+  - An output layer with 10 neurons (one for each digit 0-9)
 
-Calcula a precisão final no conjunto de teste
-Mostra o resultado quantitativo
-Demonstração de previsões:
+### Training Process
+- Trains the model for 5 epochs
+- Records and displays accuracy and loss metrics for each epoch
+- Uses callbacks to show progress
 
-Seleciona 5 imagens aleatórias do conjunto de teste
-Faz previsões e mostra os resultados visualmente
-Exibe o dígito real, o previsto e o nível de confiança
-Matriz de confusão:
+### Training Visualization
+- Generates plots showing accuracy and loss evolution
+- Compares performance between training and test sets
 
-Gera uma matriz de confusão para avaliar o desempenho do modelo
-Visualiza os acertos e erros entre as diferentes classes (dígitos)
-Conclusão:
+### Model Evaluation
+- Calculates final accuracy on the test set
+- Shows quantitative results
 
-Finaliza o PDF com um resumo
-Exibe mensagem confirmando que o TensorFlow está funcionando corretamente
+### Prediction Demonstration
+- Selects 5 random images from the test set
+- Makes predictions and displays results visually
+- Shows the actual digit, prediction, and confidence level
+
+### Confusion Matrix
+- Generates a confusion matrix to evaluate model performance
+- Visualizes correct predictions and errors across different classes (digits)
+
+### Conclusion
+- Finalizes the PDF with a summary
+- Displays a message confirming TensorFlow is working correctly
+
+## Requirements
+
+- TensorFlow
+- NumPy
+- Matplotlib
+
+## Output
+
+The script generates a timestamped PDF containing all visualizations, training metrics, and evaluation results.
